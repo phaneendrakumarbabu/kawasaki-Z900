@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Z900 AR Project</title>
+    <link rel="stylesheet" href="/src/style.css">
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+</head>
+
+<body>
+    <!-- 1. Top Navigation Bar -->
+    <nav class="navbar glass-nav">
+        <div class="nav-brand">Z900 AR</div>
+        <ul class="nav-links">
+            <li><a href="#cinematic">Cinematic</a></li>
+            <li><a href="#performance">Performance</a></li>
+            <li><a href="#specs">Specifications</a></li>
+            <li><a href="#community">Community</a></li>
+            <li><a href="#home" class="btn-primary">Discover Z900</a></li>
+        </ul>
+    </nav>
+
+    <div class="site-container">
+
+        <!-- 2. Hero Section: Scroll Expansion -->
+        <section class="expansion-hero" id="home">
+            <div class="expansion-pin">
+                <div class="expansion-bg">
+                    <img src="/images/parallax_bg.png" alt="Z900 Background" />
+                </div>
+                <div class="expansion-text-container">
+                    <h1 class="expansion-title-left text-glow">PURE</h1>
+                    <h1 class="expansion-title-right text-glow">DOMINANCE</h1>
+                </div>
+                <div class="expansion-subtext">
+                    <p class="small-text">As seen in Motorcyclist Magazine & RideApart</p>
+                    <p class="sub-heading">Experience Sugomi design like never before.</p>
+                    <a href="#cinematic" class="cta-btnglow mt-4">Watch the Showcase</a>
+                </div>
+                <div class="expansion-media-box">
+                    <video autoplay loop muted playsinline>
+                        <source src="/videos/shot1.mp4" type="video/mp4">
+                    </video>
+                    <div class="expansion-overlay"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Video Showcase 2 -->
+        <section id="cinematic" class="story-section video-showcase">
+            <div class="showcase-content">
+                <div class="video-wrapper glass">
+                    <video autoplay loop muted playsinline class="showcase-video">
+                        <source src="/videos/shot2.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="showcase-text">
+                    <h2>Aggressive Stance</h2>
+                    <p>A crouching, predatory posture that commands the street. The Z900's radical Sugomi design
+                        elements ensure it looks intimidating whether in motion or standing completely still.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Detailed Info: Performance & Tech -->
+        <section class="story-section info-section" id="performance">
+            <div class="info-grid">
+                <div class="info-card glass">
+                    <h3 class="info-title">948cc Inline-Four Engine</h3>
+                    <p>Delivers raw, emotional power with a quick-revving character. Tuned for strong mid-range hit,
+                        making street riding an absolute thrill.</p>
+                    <div class="info-stats">
+                        <div class="stat"><span class="counter" data-target="125">0</span> PS <span class="label">Max
+                                Power</span></div>
+                        <div class="stat"><span class="counter" data-target="98.6">0</span> Nm <span class="label">Max
+                                Torque</span></div>
+                    </div>
+                </div>
+
+                <div class="info-card glass">
+                    <h3 class="info-title">Advanced Electronics</h3>
+                    <ul class="tech-list">
+                        <li><strong>KTRC (Kawasaki Traction Control):</strong> 3 modes for diverse riding conditions.
+                        </li>
+                        <li><strong>Power Modes:</strong> Full Power or Low Power (55%) selection.</li>
+                        <li><strong>Riding Modes:</strong> Sport, Road, Rain, and Rider (manual).</li>
+                        <li><strong>TFT Color Display:</strong> Seamless Bluetooth smartphone connectivity.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Detailed Info: Full Specifications Grid -->
+        <!-- Detailed Info: Interactive Gallery Specifications -->
+        <section class="story-section gallery-specs-section" id="specs">
+            <div class="gallery-container">
+                <div class="gallery-header">
+                    <div class="gallery-title-group">
+                        <h2 class="text-glow glitch-text" data-text="Technical Specifications">Technical Specifications
+                        </h2>
+                        <p class="gallery-desc">Explore the high-performance engineering that powers the Kawasaki Z900.
+                            Swipe or scroll to view the technical breakdown.</p>
+                    </div>
+                    <div class="gallery-controls">
+                        <button class="gallery-btn" id="gallery-prev" aria-label="Previous slide">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="m15 18-6-6 6-6" />
+                            </svg>
+                        </button>
+                        <button class="gallery-btn" id="gallery-next" aria-label="Next slide">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="m9 18 6-6-6-6" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="gallery-carousel">
+                    <!-- Cards will be injected via JS -->
+                </div>
+
+                <div class="gallery-dots" id="gallery-dots"></div>
+            </div>
+        </section>
+
+        <!-- 3. Platform & Tech Stack Badges -->
+        <section class="badges-section">
+            <div class="badge">Created for WebXR & Mobile AR</div>
+            <div class="badge">Built with Three.js & WebGL</div>
+        </section>
+
+        <!-- 4. Testimonial Section with Video Background -->
+        <section class="testimonial-section">
+            <div class="testimonial-bg">
+                <video autoplay loop muted playsinline class="hero-video">
+                    <source src="/videos/shot3.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="testimonial-content glass">
+                <p class="quote">“This cinematic look at the Z900 captures the absolute thrill and mechanical perfection
+                    of Kawasaki engineering.”</p>
+                <div class="author-block">
+                    <p class="author">Alex Rider, Moto Vlogger & Reviewer</p>
+                    <a href="#" class="read-link">Read article →</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Call to Action (CTA) -->
+        <section class="cta-section">
+            <div class="cta-bg">
+                <img src="/images/parallax_bg.png" alt="Z900 Speeding" class="parallax-img">
+            </div>
+            <div class="cta-content center glass">
+                <h2>Ready to step into the Future?</h2>
+                <button class="cta-btnglow mt-4">Discover More</button>
+            </div>
+        </section>
+
+        <!-- 6. Community & Socials (Card layout) -->
+        <section class="community-section" id="community">
+            <div class="cards-container">
+                <div class="social-card glass">
+                    <h3>Discord Community</h3>
+                    <p>Join our Discord community. Live chat, rideouts, support, and more...</p>
+                    <button class="btn-secondary">Join Discord</button>
+                </div>
+                <div class="social-card glass">
+                    <h3>Instagram & X</h3>
+                    <p>Stay connected with the build @Z900_ARProject</p>
+                    <button class="btn-secondary">Follow Us</button>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- 7. Footer -->
+    <footer class="site-footer animated-footer">
+        <div class="footer-glow-line"></div>
+        <div class="footer-grid">
+            <div class="footer-col-main footer-anim">
+                <div class="footer-logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-frame">
+                        <line x1="22" x2="2" y1="6" y2="6" />
+                        <line x1="22" x2="2" y1="18" y2="18" />
+                        <line x1="6" x2="6" y1="2" y2="22" />
+                        <line x1="18" x2="18" y1="2" y2="22" />
+                    </svg>
+                </div>
+                <p class="copyright">&copy; 2026 Kawasaki Motors. All rights reserved.</p>
+            </div>
+            <div class="footer-col-links">
+                <div class="footer-link-group footer-anim">
+                    <h3>Product</h3>
+                    <ul>
+                        <li><a href="#cinematic">Features</a></li>
+                        <li><a href="#performance">Pricing</a></li>
+                        <li><a href="#specs">Testimonials</a></li>
+                        <li><a href="#home">Integration</a></li>
+                    </ul>
+                </div>
+                <div class="footer-link-group footer-anim">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="/faqs">FAQs</a></li>
+                        <li><a href="/about">About Us</a></li>
+                        <li><a href="/privacy">Privacy Policy</a></li>
+                        <li><a href="/terms">Terms of Services</a></li>
+                    </ul>
+                </div>
+                <div class="footer-link-group footer-anim">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="/blog">Blog</a></li>
+                        <li><a href="/changelog">Changelog</a></li>
+                        <li><a href="/brand">Brand</a></li>
+                        <li><a href="/help">Help</a></li>
+                    </ul>
+                </div>
+                <div class="footer-link-group footer-anim">
+                    <h3>Social Links</h3>
+                    <ul>
+                        <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                                </svg> Facebook</a></li>
+                        <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                                </svg> Instagram</a></li>
+                        <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path
+                                        d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z" />
+                                    <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" />
+                                </svg> Youtube</a></li>
+                        <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path
+                                        d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                                    <rect x="2" y="9" width="4" height="12" />
+                                    <circle cx="4" cy="4" r="2" />
+                                </svg> LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
